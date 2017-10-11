@@ -1,0 +1,73 @@
+sfferra@AZA-5CG7174LG0 MINGW64 ~ (master)
+$ cd desktop
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ mkdir gittest
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ cd gittest
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git init
+Initialized empty Git repository in C:/Users/sfferra/Desktop/gittest/.git/
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git add index.html
+fatal: pathspec 'index.html' did not match any files
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ touch index.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ touch styles.css
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ touch aboutMe.txt
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ vi aboutMe.txt
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ vi aboutMe.txt
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git commit -m "updated aboutMe"
+On branch master
+
+Initial commit
+
+Untracked files:
+        aboutMe.txt
+        index.html
+        styles.css
+
+nothing added to commit but untracked files present
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git add aboutMe.txt
+warning: LF will be replaced by CRLF in aboutMe.txt.
+The file will have its original line endings in your working directory.
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git add aboutMe.txt
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git commit -m "updated aboutMe"
+[master (root-commit) 0f008cf] updated aboutMe
+ 1 file changed, 1 insertion(+)
+ create mode 100644 aboutMe.txt
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git log
+commit 0f008cfd2beeb40d631cf416c6fbc1587fe6af2b (HEAD -> master)
+Author: Space_Cowboy <sfferra@amazon.com>
+Date:   Tue Oct 10 12:31:15 2017 -0700
+
+    updated aboutMe
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/gittest (master)
+$ git revert -n HEAD

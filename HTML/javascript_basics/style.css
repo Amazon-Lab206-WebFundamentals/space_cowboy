@@ -1,0 +1,43 @@
+#wrapper {
+    background-color: rgb(18, 53, 91);
+}
+
+.banner {
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(191,215,234)
+}
+
+.menu {
+    background-color: rgb(8, 126, 139);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: rgb(82, 222, 229);
+    position: absolute;
+}
+
+.content {
+    width: 75%;
+    background-color: rgb(12, 24, 33);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: rgb(191,215,234);
+    margin-left: 18%;
+}
+
+.footer {
+    background-color: rgb(92, 102, 114);
+    padding: 10px;
+    border-radius:10px;
+    display: block;
+    margin-top: 1%;
+    color: white;
+}
+
+a {
+    color: rgb(82, 222, 229);
+    text-decoration: none;
+}

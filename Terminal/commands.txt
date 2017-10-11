@@ -1,0 +1,104 @@
+sfferra@AZA-5CG7174LG0 MINGW64 ~ (master)
+$ cd Desktop
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop (master)
+$ mkdir test
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop (master)
+$ cd test
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop/test (master)
+$ touch index.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop/test (master)
+$ touch styles.css
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop/test (master)
+$ touch commands.txt
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop/test (master)
+$ cp index.html index_2.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop/test (master)
+$ rm styles.css
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/Desktop/test (master)
+$ cd desktop
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ mkdir destination
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ cd test
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ ls
+commands.txt  destination  index.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ cp index.html index_2.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ ls
+commands.txt  destination  index.html  index_2.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ mv index_2.html ../index_2.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ ls
+commands.txt  destination  index.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ cd ..
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ ls
+'Amazon Chime.lnk'*   desktop.ini    index_2.html   test/
+'Amazon Music.lnk'*   destination/   Slack.lnk*
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ mv index_2.html destination/index_2.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ ls
+'Amazon Chime.lnk'*   desktop.ini    Slack.lnk*
+'Amazon Music.lnk'*   destination/   test/
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ cd destination
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/destination (master)
+$ ls
+index_2.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/destination (master)
+$ cd ..
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ cd test
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ l
+bash: l: command not found
+s
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ ls
+commands.txt  destination  index.html
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop/test (master)
+$ cd ..
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ rm destination
+rm: cannot remove 'destination': Is a directory
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ rmdir destination
+rmdir: failed to remove 'destination': Directory not empty
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$ rm -rf destination
+
+sfferra@AZA-5CG7174LG0 MINGW64 ~/desktop (master)
+$
