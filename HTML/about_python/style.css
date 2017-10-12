@@ -1,0 +1,32 @@
+* {
+    background-color: rgb(38, 81, 117);
+    display: inline-block;
+}
+
+#text_size{
+    display: inline-block;
+    color: white;
+}
+
+.bmenu{
+    display: inline-block;
+    background-color: rgb(74, 127, 171);   
+    color: white;
+    width: 75%;
+}
+
+.xlinks{
+    color: white;
+}
+
+.intro{
+    color: white;
+    display: inline-block;
+    width: 60%;
+}
+
+#class{
+    font-style: italic;
+    color: gold;
+}
+
