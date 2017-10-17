@@ -1,19 +1,27 @@
-var people = {
-    "students" [
-        {"name" "Sam"},
-        {"name" "Val"}
-    ],
-    "Intrusctors" [
-        {"name" "Todd"},
-        {"name" "Sean"}
-    ]
-};
+var students = [
+        {first_name:  'Michael', last_name : 'Jordan'},
+        {first_name : 'John', last_name : 'Rosales'},
+        {first_name : 'Mark', last_name : 'Guillen'},
+        {first_name : 'KB', last_name : 'Tonel'}
+]
 
-people.students[0].name
-
-for (i=0; i<; people.students.length; i++){
-    console.log(people.students[i].name)
+for(var i=0; i<students.length; i++){
+    console.log(students[i].first_name + " " + students[i].last_name)
 }
 
-foreach(var key in object)
-    for(arrays)
+
+
+// Given the following array of objects:
+
+// var students = [ 
+    //  {first_name:  'Michael', last_name : 'Jordan'},
+    //  {first_name : 'John', last_name : 'Rosales'},
+    //  {first_name : 'Mark', last_name : 'Guillen'},
+    //  {first_name : 'KB', last_name : 'Tonel'}
+// ]
+// Create a program that outputs:
+
+// Michael Jordan
+// John Rosales
+// Mark Guillen
+// KB Tonel
