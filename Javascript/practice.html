@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,65 +8,36 @@
     <script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            console.log($);
-            $('#hello').click(function () {
-                var amazonText = $('#amazon').text();
-                var motoText = $('#moto').text();
-                $('#amazon').text(motoText);
-                $('#moto').text(amazonText);
-            });
+        // adding in content when clicking
             $('h1').click(function () {
-                $(this).hide();
+                var html_str = "<h1>Todd is awesome<h1>";
+                $('body').append(html_str);
             });
-            $('button').click(function () {
-                $('h1').show();
-            })
-
-            $('a').click(function () {
-                alert('you are now leaving the page!');
-            })
-
-            // effects methods   they toggle the visibility property of items
-            $('p').hide();
-
-            $('#hide').click(function () {
-                $('p').hide();
-            })
-
-            $('#show').click(function () {
-                $('p').show();
-            })
-
-            // manipulation methods   add/change either text or html to your document
-            $('h2').hover(function () {
-                $('h2').text('go see the Space Needle!');
+        // dynamically created content. adding content when click anywhere
+            $('body').on('click','h1', function(){
+                var html_str = "<h1>Todd is awesome<h1>";
+                $('body').append(html_str);
             });
-            $('.append').click(function () {
-                $('.result').append('<h4>/append adds HTML! </h4>');
-            });
-
-            // css method
-            $('button').click(function () {
-                $('button').css('background-color', 'yellow');
+        // forms assignemnt
+            $('form').submit(function(){
+                console.log($('input[name="first_name"]').val())
+                return false;
             })
-        });
+        })
     </script>
 </head>
-
 <body>
     <h1 id="hello">Hello World</h1>
     <h1 id="amazon">Hello Amazon</h1>
     <h1 id="moto">Hello Moto</h1>
     <button>Revive</button>
-    <p>This is a paragraph!!</p>
-    <p>This is also a paragraph.</p>
-    <button id="hide">This will hide all the paragraphs!</button>
-    <button id="show">Click to show all paragraphs!</button>
-    <a id="mylink" href="http://www.google.com"> Go to Google</a>
-    <h3>Moutain View, California</h3>
-    <h2>Seattle, Washington</h2>
-    <button class="append">Click to see.append work!</button>
-    <div class="result"></div>
+
+        <!--users assignemnt-->
+    <form action="/create_users" method="post">
+        <input type="text" name="first_name" placeholder="First Name">
+        <input type="text" name="last_name" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 
 </html>
